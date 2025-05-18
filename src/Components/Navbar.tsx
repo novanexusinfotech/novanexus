@@ -6,6 +6,7 @@ import { Button } from './ui/Button';
 import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { cn } from '../lib/utils';
+import ContactModal from './Contact-modal';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -60,9 +61,11 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          <Button className="bg-indigo-600 hover:bg-indigo-700">
-            Let&apos;s Build Together
-          </Button>
+          <ContactModal>
+            <Button className="bg-indigo-600 hover:bg-indigo-700">
+              Let&apos;s Build Together
+            </Button>
+          </ContactModal>
         </nav>
 
         {/* Mobile Navigation Toggle */}

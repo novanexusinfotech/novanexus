@@ -17,7 +17,7 @@ const navItems = [
   { name: 'Pricing', href: '/pricing' },
   { name: 'Projects', href: '/projects' },
   { name: 'Team', href: '/team' },
-  { name: 'Blog', href: '/blog' },
+  // { name: 'Blog', href: '/blog' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -25,8 +25,12 @@ const navItems = [
 const socialLinks = [
   { name: 'GitHub', icon: Github, href: '#' },
   { name: 'LinkedIn', icon: Linkedin, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Instagram', icon: Instagram, href: '#' },
+  { name: 'Twitter', icon: Twitter, href: 'https://x.com/NovanexusI42960' },
+  {
+    name: 'Instagram',
+    icon: Instagram,
+    href: 'https://www.instagram.com/novanexus._infotech/',
+  },
 ];
 
 export default function EnhancedFooter() {
@@ -47,6 +51,9 @@ export default function EnhancedFooter() {
                 <Link
                   key={link.name}
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
                   className="text-slate-400 hover:text-indigo-400 transition-colors"
                 >
                   <link.icon size={20} />
@@ -93,15 +100,17 @@ export default function EnhancedFooter() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Mail size={20} className="text-indigo-500 shrink-0 mt-1" />
-                <span className="text-slate-400">hello@novanexus.com</span>
+                <span className="text-slate-400">
+                  novanexusinfotech@gmail.com
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-indigo-500 shrink-0 mt-1" />
-                <span className="text-slate-400">+91 123 456 7890</span>
+                <span className="text-slate-400">+91 9042 78 68 68</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-indigo-500 shrink-0 mt-1" />
-                <span className="text-slate-400">Bangalore, India</span>
+                <span className="text-slate-400">Puducherry, India</span>
               </li>
             </ul>
           </div>
@@ -126,12 +135,12 @@ export default function EnhancedFooter() {
             >
               Terms of Service
             </Link>
-            <Link
+            {/* <Link
               href="/sitemap.xml"
               className="text-slate-400 hover:text-indigo-400 text-sm"
             >
               Sitemap
-            </Link>
+            </Link> */}
           </div>
         </div>
 

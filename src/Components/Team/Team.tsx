@@ -18,23 +18,30 @@ import ContactModal from '../Contact-modal';
 
 const teamMembers = [
   {
-    name: 'Rahul Sharma',
+    name: 'Anitha. H',
     role: 'Founder & Lead Developer',
     image: '/placeholder.svg?height=300&width=300',
-    bio: 'Full-stack developer with 10+ years of experience building scalable web applications. Passionate about clean code and user-centric design.',
-    skills: ['Next.js', 'React', 'Node.js', 'AWS', 'UI/UX'],
+    bio: 'Full-stack developer specializing in the MERN stack, with a passion for building scalable apps using Next.js and TypeScript. Focused on clean architecture and robust backend systems.',
+    skills: [
+      'MongoDB',
+      'Express.js',
+      'React',
+      'Node.js',
+      'Next.js',
+      'TypeScript',
+    ],
     social: {
       linkedin: '#',
       github: '#',
       twitter: '#',
-      email: 'rahul@novanexus.com',
+      email: 'anitha.h2711@gmail.com',
     },
   },
   {
-    name: 'Priya Patel',
-    role: 'Creative Director',
+    name: 'Deva',
+    role: 'Founder & UI/UX Designer',
     image: '/placeholder.svg?height=300&width=300',
-    bio: 'Award-winning designer with a background in both digital and print media. Specializes in creating memorable brand experiences.',
+    bio: 'Creative UI/UX designer with a knack for crafting visually appealing and user-friendly interfaces. Specializes in brand strategy and design systems using tools like Figma and Adobe Suite.',
     skills: [
       'UI Design',
       'Brand Strategy',
@@ -46,77 +53,29 @@ const teamMembers = [
       linkedin: '#',
       github: '#',
       twitter: '#',
-      email: 'priya@novanexus.com',
+      email: 'deva@novanexus.com',
     },
   },
   {
-    name: 'Alex Chen',
-    role: 'Frontend Developer',
+    name: 'Rajeshkumar',
+    role: 'Founder & Lead Engineer',
     image: '/placeholder.svg?height=300&width=300',
-    bio: 'Frontend specialist with a keen eye for detail and a passion for creating smooth, interactive user experiences.',
+    bio: 'Full-stack Engineer passionate about building optimized, secure, and scalable digital experiences. Expert in MERN stack, SEO, CMS integrations, and deploying serverless apps on AWS.',
     skills: [
+      'MongoDB',
+      'Express.js',
       'React',
+      'Node.js',
+      'Next.js',
       'TypeScript',
-      'Tailwind CSS',
-      'Framer Motion',
-      'Accessibility',
-    ],
-    social: {
-      linkedin: '#',
-      github: '#',
-      twitter: '#',
-      email: 'alex@novanexus.com',
-    },
-  },
-  {
-    name: 'Maya Singh',
-    role: 'Backend Developer',
-    image: '/placeholder.svg?height=300&width=300',
-    bio: 'Backend expert focused on building secure, scalable APIs and database architectures for complex applications.',
-    skills: ['Node.js', 'Python', 'MongoDB', 'PostgreSQL', 'GraphQL'],
-    social: {
-      linkedin: '#',
-      github: '#',
-      twitter: '#',
-      email: 'maya@novanexus.com',
-    },
-  },
-  {
-    name: 'David Kumar',
-    role: 'Project Manager',
-    image: '/placeholder.svg?height=300&width=300',
-    bio: 'Certified project manager with experience leading complex digital projects from conception to launch.',
-    skills: [
-      'Agile Methodology',
-      'Client Communication',
-      'Resource Planning',
-      'Risk Management',
-      'Jira',
-    ],
-    social: {
-      linkedin: '#',
-      github: '#',
-      twitter: '#',
-      email: 'david@novanexus.com',
-    },
-  },
-  {
-    name: 'Sophia Rodriguez',
-    role: 'SEO & Content Specialist',
-    image: '/placeholder.svg?height=300&width=300',
-    bio: 'Digital marketing expert specializing in SEO, content strategy, and analytics to drive organic growth.',
-    skills: [
+      'AWS',
       'SEO',
-      'Content Strategy',
-      'Google Analytics',
-      'Keyword Research',
-      'Copywriting',
+      'CMS',
     ],
     social: {
-      linkedin: '#',
-      github: '#',
-      twitter: '#',
-      email: 'sophia@novanexus.com',
+      linkedin: 'https://www.linkedin.com/in/r-rajeshkumar/',
+      github: 'https://github.com/Raajulogu',
+      email: 'rajeshkumarlogu145@gmail.com',
     },
   },
 ];
@@ -212,6 +171,7 @@ export default function TeamPage() {
                     <div className="flex space-x-3">
                       <Link
                         href={member.social.linkedin}
+                        target="_blank"
                         className="text-slate-400 hover:text-indigo-400 transition-colors"
                       >
                         <Linkedin className="h-5 w-5" />
@@ -219,20 +179,25 @@ export default function TeamPage() {
                       </Link>
                       <Link
                         href={member.social.github}
+                        target="_blank"
                         className="text-slate-400 hover:text-indigo-400 transition-colors"
                       >
                         <Github className="h-5 w-5" />
                         <span className="sr-only">GitHub</span>
                       </Link>
-                      <Link
-                        href={member.social.twitter}
-                        className="text-slate-400 hover:text-indigo-400 transition-colors"
-                      >
-                        <Twitter className="h-5 w-5" />
-                        <span className="sr-only">Twitter</span>
-                      </Link>
+                      {member.social.twitter && (
+                        <Link
+                          href={member.social.twitter}
+                          target="_blank"
+                          className="text-slate-400 hover:text-indigo-400 transition-colors"
+                        >
+                          <Twitter className="h-5 w-5" />
+                          <span className="sr-only">Twitter</span>
+                        </Link>
+                      )}
                       <Link
                         href={`mailto:${member.social.email}`}
+                        target="_blank"
                         className="text-slate-400 hover:text-indigo-400 transition-colors"
                       >
                         <Mail className="h-5 w-5" />

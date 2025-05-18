@@ -71,7 +71,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-slate-300">hello@novanexus.com</p>
+                    <p className="text-slate-300">
+                      novanexusinfotech@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -81,7 +83,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-slate-300">+91 123 456 7890</p>
+                    <p className="text-slate-300">+91 9042 78 68 68</p>
                   </div>
                 </div>
 
@@ -91,7 +93,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-slate-300">Bangalore, India</p>
+                    <p className="text-slate-300">Puducherry, India</p>
                   </div>
                 </div>
 
@@ -103,8 +105,10 @@ export default function ContactPage() {
                     <h3 className="font-semibold mb-1">WhatsApp</h3>
                     <p className="text-slate-300">
                       <Link
-                        href="https://wa.me/1234567890"
+                        href="https://wa.me/9042786868"
                         className="text-indigo-400 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Chat with us on WhatsApp
                       </Link>

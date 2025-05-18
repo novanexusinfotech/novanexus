@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'NovaNexus | Where Vision Meets Execution',
     description:
       'We craft beautiful, performant websites and apps that grow your business.',
-    url: 'https://novanexus.vercel.app',
+    url: 'https://novanexusinfotech.netlify.app',
     siteName: 'NovaNexus',
     images: [
       {

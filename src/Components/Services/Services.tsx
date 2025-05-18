@@ -12,6 +12,10 @@ import {
   Check,
 } from 'lucide-react';
 import Image from 'next/image';
+import apps from '../../images/services/apps.jpg';
+import eCommerce from '../../images/services/e-commerce.jpg';
+import businessSite from '../../images/services/business_website.jpg';
+import dashboard from '../../images/services/dashboard.jpg';
 
 const services = [
   {
@@ -28,7 +32,7 @@ const services = [
       'Analytics integration',
       'Contact forms and lead capture',
     ],
-    image: '/placeholder.svg?height=400&width=600',
+    image: businessSite,
   },
   {
     id: 'ecommerce',
@@ -44,7 +48,7 @@ const services = [
       'Order processing and fulfillment',
       'Mobile shopping experience',
     ],
-    image: '/placeholder.svg?height=400&width=600',
+    image: eCommerce,
   },
   {
     id: 'ai',
@@ -60,7 +64,7 @@ const services = [
       'Image and voice recognition',
       'Data analysis and insights',
     ],
-    image: '/placeholder.svg?height=400&width=600',
+    image: apps,
   },
   {
     id: 'dashboards',
@@ -76,7 +80,7 @@ const services = [
       'Asset management',
       'Performance reporting',
     ],
-    image: '/placeholder.svg?height=400&width=600',
+    image: dashboard,
   },
 ];
 

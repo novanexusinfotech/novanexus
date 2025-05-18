@@ -4,15 +4,25 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
+//Icons
+import Nextjs from '../images/icons/tech-stack/Nextjs';
+import Reactjs from '../images/icons/tech-stack/Reactjs';
+import Tailwind from '../images/icons/tech-stack/Tailwind';
+import Node from '../images/icons/tech-stack/Node';
+import MongoDB from '../images/icons/tech-stack/MongoDB';
+import Prismic from '../images/icons/tech-stack/Prismic';
+import GSAP from '../images/icons/tech-stack/GSAP';
+import Framer from '../images/icons/tech-stack/Framer';
+
 const technologies = [
-  { name: 'Next.js', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'React', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'Tailwind CSS', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'Node.js', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'MongoDB', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'Prismic', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'GSAP', logo: '/placeholder.svg?height=60&width=60' },
-  { name: 'Framer Motion', logo: '/placeholder.svg?height=60&width=60' },
+  { name: 'Next.js', logo: <Nextjs /> },
+  { name: 'React', logo: <Reactjs /> },
+  { name: 'Tailwind CSS', logo: <Tailwind /> },
+  { name: 'Node.js', logo: <Node /> },
+  { name: 'MongoDB', logo: <MongoDB /> },
+  { name: 'Prismic', logo: <Prismic /> },
+  { name: 'GSAP', logo: <GSAP /> },
+  { name: 'Framer Motion', logo: <Framer /> },
 ];
 
 export default function TechStack() {
@@ -50,13 +60,7 @@ export default function TechStack() {
               className="flex flex-col items-center"
             >
               <div className="bg-slate-900 p-4 rounded-xl mb-2">
-                <Image
-                  src={tech.logo || '/placeholder.svg'}
-                  alt={tech.name}
-                  width={60}
-                  height={60}
-                  className="h-12 w-12 object-contain"
-                />
+                {tech.logo}
               </div>
               <span className="text-sm text-slate-400">{tech.name}</span>
             </motion.div>

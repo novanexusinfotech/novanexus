@@ -207,8 +207,8 @@ export default function PricingPage() {
                           <span
                             className={
                               feature.included
-                                ? 'text-slate-300'
-                                : 'text-slate-500'
+                                ? 'text-slate-500'
+                                : 'text-slate-300'
                             }
                           >
                             {feature.name}
