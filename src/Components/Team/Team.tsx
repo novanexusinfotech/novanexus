@@ -15,6 +15,8 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/Button';
 import ContactModal from '../Contact-modal';
+import DevaImage from '../../images/team/Deva.jpg';
+import RajeshImage from '../../images/team/Rajesh.jpg';
 
 const teamMembers = [
   {
@@ -34,13 +36,13 @@ const teamMembers = [
       linkedin: '#',
       github: '#',
       twitter: '#',
-      email: 'anitha.h2711@gmail.com',
+      email: 'anitha.hk2711@gmail.com',
     },
   },
   {
     name: 'Deva',
     role: 'Founder & UI/UX Designer',
-    image: '/placeholder.svg?height=300&width=300',
+    image: DevaImage,
     bio: 'Creative UI/UX designer with a knack for crafting visually appealing and user-friendly interfaces. Specializes in brand strategy and design systems using tools like Figma and Adobe Suite.',
     skills: [
       'UI Design',
@@ -50,16 +52,16 @@ const teamMembers = [
       'Motion Design',
     ],
     social: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/devaguru006/',
       github: '#',
       twitter: '#',
-      email: 'deva@novanexus.com',
+      email: 'devaguru006@gmail.com',
     },
   },
   {
     name: 'Rajeshkumar',
     role: 'Founder & Lead Engineer',
-    image: '/placeholder.svg?height=300&width=300',
+    image: RajeshImage,
     bio: 'Full-stack Engineer passionate about building optimized, secure, and scalable digital experiences. Expert in MERN stack, SEO, CMS integrations, and deploying serverless apps on AWS.',
     skills: [
       'MongoDB',
@@ -140,7 +142,7 @@ export default function TeamPage() {
                 className="h-full"
               >
                 <Card className="bg-slate-900 border-slate-800 h-full flex flex-col hover:border-indigo-500/30 transition-all duration-300 shadow-xl overflow-hidden">
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-[450px] overflow-hidden">
                     <Image
                       src={member.image || '/placeholder.svg'}
                       alt={member.name}

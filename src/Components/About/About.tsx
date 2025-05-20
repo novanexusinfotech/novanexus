@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { Card, CardContent } from '../ui/Card';
 import { CheckCircle } from 'lucide-react';
+import Team_image from '../../images/Team_image.jpg';
 
 const coreValues = [
   {
@@ -108,7 +109,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src={Team_image}
                 alt="NovaNexus Team"
                 width={600}
                 height={500}
